@@ -1,11 +1,11 @@
 {
   "name": "chefagent",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/mastra/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
-    "build": "mastra build",
+    "build": "tsc",
     "start": "mastra start"
   },
   "keywords": [],
@@ -23,5 +23,8 @@
     "@types/node": "^22.14.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }

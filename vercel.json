@@ -3,13 +3,16 @@
   "builds": [
     {
       "src": "src/mastra/index.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["src/**"]
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/mastra/index.ts"
+      "dest": "/src/mastra/index.ts"
     }
   ]
 }
